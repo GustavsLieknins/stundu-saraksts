@@ -11,19 +11,56 @@ function App() {
     "Cita stunda",
     "Vēl stunda",
   ];
-  const visasStundas = {
-    Pirmdiena: [
-      "Sports pie Klintas",
-      "Dabaszinības mīlu fiziku",
+  const visasStundas = [
+    {diena: "Pirmdiena",
+    stundas: [
+      "Pragromarot",
+      "kys mīlu fiziku",
       "Vēsture",
       "🫥"
     ]
-  }
+    },
+    {diena: "Otradiena",
+    stundas: [
+      "Pragromarot",
+      "giga mīlu fiziku",
+      "fake",
+      "Y"
+    ]
+    },
+    {diena: "Tresdiena",
+    stundas: [
+      "Pragromarot",
+      "mega mīlu fiziku",
+      "real",
+      "W"
+    ]
+    },
+    {diena: "Ceturdiena",
+    stundas: [
+      "Pragromarot",
+      "ultra mīlu fiziku",
+      "hihi",
+      ":3"
+    ]
+    },
+    {diena: "Piektadiena",
+    stundas: [
+      "Pragromarot",
+      "faking mīlu fiziku",
+      "subaru",
+      ":,("
+    ]
+    },
+  ];
+
+  const dienasJSX = visasStundas.map((diena, i) => {
+    return <Diena key={i} diena={diena.diena} stundas={diena.stundas}/>
+  });
   return (
     <>
       <div>te būs stundu saraksts šodien</div>
-      <Diena diena="Pirmdiena" stundas={pirmdienasStundas}/>
-      <Diena diena="Otrdiena" stundas={otrdienasStundas}/>
+      {dienasJSX}
     </>
   )
 }
