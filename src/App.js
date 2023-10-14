@@ -1,4 +1,9 @@
 import Diena from "./Diena";
+import gosling1 from './gosling-1.png';
+import gosling2 from './gosling-2.png';
+import gosling3 from './gosling-3.png';
+import gosling4 from './gosling-4.png';
+import gosling5 from './gosling-5.png';
 
 function App() {
   const pirmdienasStundas = [
@@ -18,7 +23,8 @@ function App() {
       "kys mīlu fiziku",
       "Vēsture",
       "🫥"
-    ]
+    ],
+    img: {gosling1}
     },
     {diena: "Otradiena",
     stundas: [
@@ -26,7 +32,8 @@ function App() {
       "giga mīlu fiziku",
       "fake",
       "Y"
-    ]
+    ],
+    img: {gosling2}
     },
     {diena: "Tresdiena",
     stundas: [
@@ -34,7 +41,8 @@ function App() {
       "mega mīlu fiziku",
       "real",
       "W"
-    ]
+    ],
+    img: {gosling3}
     },
     {diena: "Ceturdiena",
     stundas: [
@@ -42,7 +50,8 @@ function App() {
       "ultra mīlu fiziku",
       "hihi",
       ":3"
-    ]
+    ],
+    img: {gosling4}
     },
     {diena: "Piektadiena",
     stundas: [
@@ -50,15 +59,17 @@ function App() {
       "faking mīlu fiziku",
       "subaru",
       ":,("
-    ]
-    },
+    ],
+    img: {gosling5}
+    }
   ];
 
   const dienasJSX = visasStundas.map((diena, i) => {
-    return <Diena key={i} diena={diena.diena} stundas={diena.stundas}/>
+    return <Diena key={i} diena={diena.diena} stundas={diena.stundas} />
   });
   return (
     <>
+    <h1 className="Virsraksts">By Gusis OG veidots stundu saraksts</h1>
       {dienasJSX}
     </>
   )

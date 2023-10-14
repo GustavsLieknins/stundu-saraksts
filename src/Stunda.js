@@ -2,7 +2,7 @@ import styles from "./Stunda.module.css";
 
 function Stunda(props) {
   return (
-      <li className={styles.violets}>{props.nosaukums}</li>
+      <li className={styles.violets}>{props.skaitlis}. {props.nosaukums}</li>
   )
 }
 

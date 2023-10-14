@@ -1,8 +1,39 @@
 .violets 
 {
-    color: green;
+    color: white;
 }
 
-{
+/* {
     border: 1px solid black;
+} */
+
+ul 
+{
+    padding: 0;
+}
+/* h2
+{
+    margin-left: 50px;
+    background-color: rgb(245,245,220);
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    width: 1fr;
+    border: 1px solid black;
+} */
+.divins
+{
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    background-color: rgb(193, 193, 160);
+    width: 500px;
+}
+.diena
+{  
+    background-color: rgb(245,245,220);
+    padding-left: 30px;
+    width: 470px;
+    color: rgb(0, 0, 107);
+    font-weight: bolder;
 }

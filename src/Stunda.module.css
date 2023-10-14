@@ -1,9 +1,11 @@
 .violets 
 {
-    color: pink;
+    color: black;
+    font-weight: bolder;
 }
 li
 {
     border: 1px solid black;
-
+    padding-left: 10px;
+    width: 490px;
 }
